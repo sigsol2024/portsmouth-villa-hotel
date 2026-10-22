@@ -1035,7 +1035,14 @@ form.enquire textarea:focus { outline: 2px solid var(--gold); outline-offset: 3p
 .included li::before { content: "— "; color: var(--gold); font-weight: 700; }
 
 /* ---------- Experiences: full-screen panels (Lusso system) ---------- */
-.exp-full { position: relative; min-height: calc(100svh - var(--header)); display: flex; overflow: hidden; }
+.exp-full { position: relative; height: calc(100svh - var(--header)); display: flex; overflow: hidden; }
+.exp-full__inner > * { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.exp-full__inner > *:nth-child(2) { transition-delay: .1s; }
+.exp-full__inner > *:nth-child(3) { transition-delay: .2s; }
+.exp-full__inner > *:nth-child(4) { transition-delay: .32s; }
+.exp-full__inner > *:nth-child(5) { transition-delay: .42s; }
+.exp-full.is-in .exp-full__inner > * { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .exp-full__inner > * { opacity: 1; transform: none; transition: none; } }
 .exp-full__bg, .exp-full__bg .media, .exp-full__bg img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .exp-full__bg img { object-fit: cover; }
 .exp-full__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(26,26,26,.72), rgba(26,26,26,.25) 60%, rgba(26,26,26,.1)); }
@@ -1050,20 +1057,22 @@ form.enquire textarea:focus { outline: 2px solid var(--gold); outline-offset: 3p
 .exp-full__icon svg { width: 1.9rem; height: 1.9rem; fill: none; stroke: #fff; stroke-width: 1.5; }
 
 /* ---------- Chidera hall hero ---------- */
-.chidera-hero { position: relative; min-height: calc(88svh - var(--header)); display: flex; align-items: flex-end; overflow: hidden; }
+.chidera-hero { position: relative; min-height: calc(88svh - var(--header)); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
 .chidera-hero__photo, .chidera-hero__photo .media, .chidera-hero__photo img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .chidera-hero__photo img { object-fit: cover; }
 .chidera-hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,26,26,.15), rgba(26,26,26,.72)); }
-.chidera-hero__copy { position: relative; z-index: 2; color: #fff; padding-bottom: var(--section); padding-top: calc(var(--section) * 1.2); max-width: 46rem; }
+.chidera-hero__copy { position: relative; z-index: 2; color: #fff; width: min(1180px, calc(100% - 3rem)); margin-inline: auto; padding-bottom: 3.5rem; padding-top: calc(var(--section) * 1.2); text-align: left; }
+.chidera-hero__copy p { max-width: 36rem; }
 .chidera-hero__copy .h1, .chidera-hero__copy p { color: #fff; }
 .chidera-hero__copy .label { color: #f2d28c; }
 
 /* ---------- About hero + numbers ---------- */
-.about-hero { position: relative; min-height: 68svh; display: flex; align-items: flex-end; overflow: hidden; }
+.about-hero { position: relative; min-height: 68svh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
 .about-hero__photo, .about-hero__photo .media, .about-hero__photo img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .about-hero__photo img { object-fit: cover; }
 .about-hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,26,26,.12), rgba(26,26,26,.68)); }
-.about-hero__copy { position: relative; z-index: 2; color: #fff; padding-bottom: var(--section); padding-top: calc(var(--section) * 1.2); max-width: 48rem; }
+.about-hero__copy { position: relative; z-index: 2; color: #fff; width: min(1180px, calc(100% - 3rem)); margin-inline: auto; padding-bottom: 3.5rem; padding-top: calc(var(--section) * 1.2); text-align: left; }
+.about-hero__copy p { max-width: 36rem; }
 .about-hero__copy .h1, .about-hero__copy p { color: #fff; }
 .about-hero__copy .label { color: #f2d28c; }
 .stats-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); padding-block: 0; margin-block: var(--section); }

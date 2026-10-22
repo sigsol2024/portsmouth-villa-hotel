@@ -30,7 +30,7 @@
   }
 
   function reveal() {
-    var nodes = document.querySelectorAll(".reveal");
+    var nodes = document.querySelectorAll(".reveal, .exp-full");
     if (!nodes.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       nodes.forEach(function (node) { node.classList.add("is-in"); });
       return;
