@@ -1,0 +1,169 @@
+/* Contact — new site pattern */
+
+.contact-page {
+  padding-top: var(--header);
+  background: var(--ui-cream);
+}
+
+.contact-main {
+  padding: 4.5rem 0;
+  background: var(--ui-bg);
+}
+
+.contact-main__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .contact-main__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.contact-info h2,
+.contact-form-panel h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.contact-channels {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-channel {
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--ui-line);
+}
+
+.contact-channel .label { margin: 0 0 0.35rem; }
+
+.contact-channel p {
+  margin: 0;
+  color: var(--ui-ink);
+  line-height: 1.55;
+}
+
+.contact-channel a {
+  color: var(--ui-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-channel a:hover { color: var(--ui-gold); }
+
+.contact-map {
+  margin-top: 1.75rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--ui-line);
+  background: var(--ui-surface);
+  aspect-ratio: 16 / 11;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.contact-info > p { margin: 1rem 0 0; }
+
+.contact-form-panel {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+@media (min-width: 800px) {
+  .contact-form-panel { padding: 2.25rem; }
+}
+
+.contact-form-panel > p {
+  margin: 0.75rem 0 0;
+  color: var(--ui-muted);
+  line-height: 1.6;
+}
+
+.contact-form-panel form.enquire {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.enquire__row {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 560px) {
+  .enquire__row { grid-template-columns: 1fr 1fr; }
+}
+
+body[data-page="contact"] form.enquire label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ui-secondary);
+}
+
+body[data-page="contact"] form.enquire input,
+body[data-page="contact"] form.enquire select,
+body[data-page="contact"] form.enquire textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--ui-line);
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 400;
+  color: var(--ui-ink);
+}
+
+body[data-page="contact"] form.enquire input:focus,
+body[data-page="contact"] form.enquire select:focus,
+body[data-page="contact"] form.enquire textarea:focus {
+  outline: 2px solid var(--ui-gold);
+  outline-offset: 2px;
+}
+
+body[data-page="contact"] form.enquire .ui-btn {
+  justify-self: start;
+  margin-top: 0.25rem;
+}
+
+.contact-close {
+  padding: 3.5rem 0;
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  text-align: center;
+  border-top: 1px solid var(--ui-line);
+  margin-top: 0;
+}
+
+.contact-close p {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--ui-ink);
+}
+
+@media (max-width: 560px) {
+  .contact-main { padding: 3.25rem 0; }
+}

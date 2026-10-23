@@ -9,27 +9,64 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/stay.css">
 </head>
 <body data-page="stay">
   <div id="site-header-root"></div>
-  <main id="main" class="page">
-    <header class="page-head">
-      <div class="wreath wreath--black wreath--corner" aria-hidden="true"></div>
-      <div class="wrap">
-        <p class="label">Stay</p>
-        <h1 class="h1">Four ways to stay.</h1>
-        <p class="lead" id="stay-shared"></p>
-        <ul class="intro-facts factbar">
-          <li><span>Check-in</span><strong data-fill="checkIn"></strong></li>
-          <li><span>Check-out</span><strong data-fill="checkOut"></strong></li>
-          <li><span>Guests</span><strong data-fill="guests"></strong></li>
-          <li><span>To confirm</span><strong data-fill="deposit"></strong></li>
-        </ul>
+  <main id="main" class="stay-page">
+    <header class="stay-hero">
+      <div class="wrap stay-hero__inner">
+        <div class="stay-hero__copy">
+          <div class="stay-hero__eyebrow">
+            <span class="stay-hero__rule"></span>
+            <span class="label">Stay · Accommodations</span>
+          </div>
+          <h1>Four ways to stay.</h1>
+          <p class="lead" id="stay-shared"></p>
+        </div>
+        <dl class="stay-facts">
+          <div>
+            <dt>Check-in</dt>
+            <dd data-fill="checkIn"></dd>
+          </div>
+          <div>
+            <dt>Check-out</dt>
+            <dd data-fill="checkOut"></dd>
+          </div>
+          <div>
+            <dt>Guests</dt>
+            <dd data-fill="guests"></dd>
+          </div>
+          <div>
+            <dt>To confirm</dt>
+            <dd>One night</dd>
+          </div>
+        </dl>
       </div>
     </header>
-    <div class="wrap">
-      <div class="stay-grid" id="stay-list"></div>
+
+    <div class="wrap stay-showcase" id="categories">
+      <div id="stay-list"></div>
     </div>
+
+    <section class="wrap stay-help">
+      <div class="stay-help__panel">
+        <div class="stay-help__copy">
+          <p class="label">Reservations</p>
+          <h2>Need help choosing your stay?</h2>
+          <p>Call or email the hotel to ask about a room, dates, or a stay that includes Chidera Hall.</p>
+          <div class="stay-help__contacts">
+            <a href="tel:+2348061463304">0806 146 3304</a>
+            <a href="tel:+2348060940609">0806 094 0609</a>
+            <a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a>
+          </div>
+        </div>
+        <aside class="stay-help__aside">
+          <p class="label">A stay includes</p>
+          <p>Complimentary breakfast for one, high-speed internet, and access to the hotel’s leisure and entertainment. One night confirms the booking.</p>
+        </aside>
+      </div>
+    </section>
   </main>
   <div id="site-footer-root"></div>
   <script src="js/content.js"></script>

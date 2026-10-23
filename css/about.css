@@ -1,0 +1,246 @@
+/* About — Stay / Experiences text-intro pattern */
+
+.about-page {
+  padding-top: var(--header);
+  background: var(--ui-cream);
+}
+
+.about-story {
+  padding: 4.5rem 0;
+  background: var(--ui-bg);
+}
+
+.about-story__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .about-story__grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3.5rem;
+  }
+}
+
+.about-story__copy h2 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 18ch;
+}
+
+.about-story__copy > p {
+  margin: 1rem 0 0;
+  color: var(--ui-muted);
+  line-height: 1.65;
+  max-width: 38rem;
+}
+
+.about-story__aside {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.about-aside-facts {
+  margin: 1rem 0 0;
+}
+
+.about-aside-facts > div {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--ui-line);
+}
+
+.about-aside-facts > div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+.about-aside-facts dt {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ui-secondary);
+}
+
+.about-aside-facts dd {
+  margin: 0.35rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ui-ink);
+}
+
+.about-aside-facts a {
+  color: var(--ui-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-aside-facts a:hover { color: var(--ui-gold); }
+
+.about-exp-band {
+  padding: 4.5rem 0;
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  margin-bottom: 0;
+}
+
+.about-exp-band__head {
+  max-width: 36rem;
+  margin-bottom: 2rem;
+}
+
+.about-exp-band__head h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.about-exp-band__head > p {
+  margin: 0.85rem 0 0;
+  color: var(--ui-muted);
+  line-height: 1.65;
+}
+
+.about-exp {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+@media (min-width: 800px) {
+  .about-exp { grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+}
+
+.about-exp li {
+  border: 0;
+}
+
+.about-exp a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 1rem 1.15rem;
+  background: #fff;
+  border: 1px solid var(--ui-line);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--ui-ink) !important;
+  font-weight: 600;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.about-exp a:hover {
+  border-color: rgba(168, 115, 9, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  color: var(--ui-ink) !important;
+}
+
+.about-exp a span {
+  color: var(--ui-gold) !important;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.about-exp-band__link { margin: 1.5rem 0 0; }
+
+.about-people {
+  padding: 4.5rem 0;
+  background: var(--ui-bg);
+}
+
+.about-people__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .about-people__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.about-person {
+  background: #fff;
+  border: 1px solid var(--ui-line);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+}
+
+.about-person h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.about-person > p {
+  margin: 0.9rem 0 0;
+  color: var(--ui-muted);
+  line-height: 1.65;
+}
+
+.about-leaders {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-leaders li {
+  display: grid;
+  gap: 0.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ui-line);
+}
+
+.about-leaders strong {
+  font-size: 1.02rem;
+  font-weight: 650;
+}
+
+.about-leaders span {
+  color: var(--ui-muted);
+  font-size: 0.92rem;
+}
+
+.about-close {
+  padding: 4.5rem 0;
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  text-align: center;
+}
+
+.about-close__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-close p {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  max-width: 22ch;
+  line-height: 1.25;
+  color: var(--ui-ink);
+}
+
+@media (max-width: 560px) {
+  .about-story,
+  .about-exp-band,
+  .about-people,
+  .about-close { padding: 3.25rem 0; }
+}

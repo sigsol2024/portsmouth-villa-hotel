@@ -9,86 +9,170 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/chidera.css">
 </head>
 <body data-page="chidera">
   <div id="site-header-root"></div>
-  <main id="main" class="page">
-    <section class="chidera-hero">
-      <div class="chidera-hero__photo" id="chidera-photo"></div>
-      <div class="chidera-hero__shade"></div>
-      <div class="wrap chidera-hero__copy">
-        <p class="label">Chidera Hall</p>
-        <h1 class="h1">A hall for the occasion.</h1>
-        <p>Weddings, birthdays, conferences, corporate events, meetings and celebrations, for about 150 guests.</p>
-        <p><a class="book" href="#enquire-hall">Enquire for the hall</a></p>
-      </div>
-    </section>
+  <main id="main" class="hall-page">
 
-    <section class="wrap setups">
-      <p class="label">The space</p>
-      <h2 class="h2">One hall, set for the occasion.</h2>
-      <p class="lead">The same room, arranged for the day you are planning.</p>
-      <div class="setup-grid">
-        <article class="setup-card reveal">
-          <div id="chidera-celebration"></div>
-          <div class="setup-card__body">
-            <h3>For celebrations</h3>
-            <p>Weddings, birthdays and celebrations, with round tables set for guests to sit, eat and stay a while.</p>
+    <header class="hall-intro">
+      <div class="hall-wrap hall-intro__inner">
+        <div class="hall-intro__copy">
+          <div class="hall-intro__eyebrow">
+            <span class="hall-intro__rule"></span>
+            <span class="label">Chidera Hall</span>
           </div>
-        </article>
-        <article class="setup-card reveal">
-          <div id="chidera-conference"></div>
-          <div class="setup-card__body">
-            <h3>For conferences</h3>
-            <p>Conferences and corporate events, with rows facing the front so every guest can follow the session.</p>
+          <h1>A hall for the occasion.</h1>
+          <p class="lead">Weddings, birthdays, conferences, corporate events, meetings and celebrations, for about 150 guests.</p>
+          <div class="hall-intro__ctas">
+            <a class="hall-btn" href="#enquire">Enquire for the hall</a>
+            <a class="hall-text-link" href="#configurations">View hall setups</a>
           </div>
-        </article>
-        <article class="setup-card reveal">
-          <div id="chidera-meeting"></div>
-          <div class="setup-card__body">
-            <h3>For meetings</h3>
-            <p>Meetings and smaller sessions, gathered around one table so the conversation stays in the room.</p>
-          </div>
-        </article>
-      </div>
-
-      <dl class="facts hall-facts">
-        <div><dt>Capacity</dt><dd>About 150 guests</dd></div>
-        <div><dt>Occasions</dt><dd>Weddings, birthdays, conferences, corporate events, meetings and celebrations</dd></div>
-        <div><dt>Address</dt><dd data-fill="address"></dd></div>
-      </dl>
-    </section>
-
-    <section class="wrap enquire-band" id="enquire-hall">
-      <div class="enquire-panel">
-        <div class="enquire-layout">
+        </div>
+        <dl class="hall-ribbon">
           <div>
-            <p class="label">Plan your gathering</p>
-            <h2 class="h2">Enquire for Chidera Hall</h2>
-            <p>Tell us the date and the occasion. The enquiry opens in your email, addressed to the hotel.</p>
-            <form class="enquire" id="enquire">
-              <label>Name <input name="name" required autocomplete="name"></label>
-              <label>Phone <input name="phone" required autocomplete="tel"></label>
-              <label>Date <input name="dates" required placeholder="Day of the event"></label>
-              <label>Occasion
-                <select name="occasion" required>
-                  <option value="Wedding">Wedding</option>
-                  <option value="Birthday">Birthday</option>
-                  <option value="Conference">Conference</option>
-                  <option value="Corporate event">Corporate event</option>
-                  <option value="Meeting">Meeting</option>
-                  <option value="Celebration">Celebration</option>
-                </select>
-              </label>
-              <label>Guests <input name="guests" type="number" min="1" max="150" placeholder="Up to about 150"></label>
-              <label>Note <textarea name="note" rows="4"></textarea></label>
-              <button class="book" style="display:inline-flex;justify-content:center" type="submit">Send enquiry</button>
-            </form>
+            <dt>Capacity</dt>
+            <dd>About 150 guests</dd>
           </div>
-          <div class="enquire-photo" id="chidera-form-photo"></div>
+          <div>
+            <dt>Celebrations</dt>
+            <dd>Weddings &amp; birthdays</dd>
+          </div>
+          <div>
+            <dt>Business</dt>
+            <dd>Conferences &amp; meetings</dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd>Obinwe Street, Fegge</dd>
+          </div>
+        </dl>
+      </div>
+    </header>
+
+    <section class="hall-space" id="configurations">
+      <div class="hall-wrap">
+        <div class="hall-section-head">
+          <p class="label">The space</p>
+          <h2>One hall, set for the occasion.</h2>
+          <p>The same room, arranged for the day you are planning.</p>
+        </div>
+        <div class="hall-setups">
+          <article class="hall-setup reveal">
+            <div class="hall-setup__photo" id="chidera-celebration"></div>
+            <div class="hall-setup__body">
+              <h3>For celebrations</h3>
+              <p>Weddings, birthdays and celebrations, with round tables set for guests to sit, eat and stay a while.</p>
+            </div>
+          </article>
+          <article class="hall-setup reveal">
+            <div class="hall-setup__photo" id="chidera-conference"></div>
+            <div class="hall-setup__body">
+              <h3>For conferences</h3>
+              <p>Conferences and corporate events, with rows facing the front so every guest can follow the session.</p>
+            </div>
+          </article>
+          <article class="hall-setup reveal">
+            <div class="hall-setup__photo" id="chidera-meeting"></div>
+            <div class="hall-setup__body">
+              <h3>For meetings</h3>
+              <p>Meetings and smaller sessions, gathered around one table so the conversation stays in the room.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
+    <section class="hall-details">
+      <div class="hall-wrap hall-details__grid">
+        <div class="hall-details__copy">
+          <p class="label">The hall</p>
+          <h2>One hall for the day you are planning.</h2>
+          <p>Weddings, birthdays, conferences, corporate events, meetings and celebrations, for about 150 guests.</p>
+        </div>
+        <div class="hall-details__panel">
+          <div class="hall-details__panel-head">
+            <h3>Hall details</h3>
+          </div>
+          <dl class="hall-matrix">
+            <div>
+              <dt>Guest capacity</dt>
+              <dd>About 150 guests</dd>
+            </div>
+            <div>
+              <dt>Occasions</dt>
+              <dd>Weddings, birthdays, conferences, corporate events, meetings and celebrations</dd>
+            </div>
+            <div>
+              <dt>Address</dt>
+              <dd data-fill="address"></dd>
+            </div>
+            <div>
+              <dt>Enquiries</dt>
+              <dd data-fill="phones"></dd>
+            </div>
+          </dl>
+          <div class="hall-details__callout">
+            <div>
+              <p class="label">Visit the hall</p>
+              <p>Call the hotel to ask about a date, a setup, or a walk-through.</p>
+            </div>
+            <a class="hall-btn hall-btn--ghost" href="tel:+2348061463304">Call desk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hall-enquire" id="enquire">
+      <div class="hall-wrap">
+        <div class="hall-enquire__panel">
+          <div class="hall-enquire__grid">
+            <div class="hall-enquire__form">
+              <p class="label">Plan your gathering</p>
+              <h2>Enquire for Chidera Hall</h2>
+              <p>Tell us the date and the occasion. The enquiry opens in your email, addressed to the hotel.</p>
+              <form class="enquire" id="enquire-hall">
+                <div class="enquire__row">
+                  <label>Name <input name="name" required autocomplete="name"></label>
+                  <label>Phone <input name="phone" required autocomplete="tel"></label>
+                </div>
+                <div class="enquire__row">
+                  <label>Date <input name="dates" required placeholder="Day of the event"></label>
+                  <label>Occasion
+                    <select name="occasion" required>
+                      <option value="" disabled selected>Select an occasion</option>
+                      <option value="Wedding">Wedding</option>
+                      <option value="Birthday">Birthday</option>
+                      <option value="Conference">Conference</option>
+                      <option value="Corporate event">Corporate event</option>
+                      <option value="Meeting">Meeting</option>
+                      <option value="Celebration">Celebration</option>
+                    </select>
+                  </label>
+                </div>
+                <label>Guests <input name="guests" type="number" min="1" max="150" placeholder="Up to about 150"></label>
+                <label>Note <textarea name="note" rows="4" placeholder="Layout, timing, or anything else we should know"></textarea></label>
+                <button class="hall-btn" type="submit">Send enquiry</button>
+              </form>
+            </div>
+            <aside class="hall-enquire__aside">
+              <div class="hall-enquire__photo" id="chidera-form-photo"></div>
+              <div class="hall-enquire__contact">
+                <p class="label">Direct line</p>
+                <p>
+                  <a href="tel:+2348061463304">0806 146 3304</a>
+                  <span aria-hidden="true"> · </span>
+                  <a href="tel:+2348060940609">0806 094 0609</a>
+                </p>
+                <p><a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a></p>
+                <p class="hall-enquire__address" data-fill="address"></p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <div id="site-footer-root"></div>
   <script src="js/content.js"></script>

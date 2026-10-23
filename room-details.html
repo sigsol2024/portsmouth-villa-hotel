@@ -9,16 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/site-ui.css">
+  <link rel="stylesheet" href="css/room.css">
 </head>
 <body data-page="rooms">
   <div id="site-header-root"></div>
-  <main id="main">
+  <main id="main" class="room-page">
     <div id="room-root"></div>
-    <section class="wrap band">
-      <p class="label">Book</p>
-      <h2 class="h2">Check dates for this room.</h2>
-      <div class="booking-bar" id="stay-book">
-        <div id="stayeazi-widget-room" class="stayeazi-booking-widget" data-widget-token="zf21Fo8LYm0jHYRP91grvJZnBqG4yktO"></div>
+    <section class="room-book" id="stay-book">
+      <div class="ui-wrap room-book__inner">
+        <p class="label">Book</p>
+        <h2>Check dates for this room.</h2>
+        <div class="booking-bar">
+          <div id="stayeazi-widget-room" class="stayeazi-booking-widget" data-widget-token="zf21Fo8LYm0jHYRP91grvJZnBqG4yktO"></div>
+        </div>
       </div>
     </section>
   </main>

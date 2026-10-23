@@ -9,75 +9,126 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/site-ui.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body data-page="about">
   <div id="site-header-root"></div>
-  <main id="main" class="page">
-    <section class="about-hero">
-      <div class="about-hero__photo" id="about-photo"></div>
-      <div class="about-hero__shade"></div>
-      <div class="wrap about-hero__copy">
-        <p class="label">About Portsmouth</p>
-        <h1 class="h1">In the city of Onitsha, one destination.</h1>
-        <p>Stay. Dine. Relax. Celebrate. Connect. Experience. Belong.</p>
-      </div>
-    </section>
+  <main id="main" class="about-page">
 
-    <section class="wrap stats-strip" aria-label="Portsmouth in numbers">
-      <div class="stat"><strong>4</strong><span>Rooms and suites</span></div>
-      <div class="stat"><strong>9</strong><span>Experiences under one roof</span></div>
-      <div class="stat"><strong>150</strong><span>Guests in Chidera Hall</span></div>
-      <div class="stat"><strong>1</strong><span>Address in Onitsha</span></div>
-    </section>
-
-    <section class="wrap split about-story">
-      <div>
-        <p class="label">The hotel</p>
-        <h2 class="h2">Accommodation is the beginning, not the whole visit.</h2>
-        <p>Portsmouth Villa Hotel &amp; Suites is a hospitality and lifestyle destination in Onitsha. Guests stay, dine, relax, celebrate, connect and belong under one roof.</p>
-        <p>Every guest deserves royal treatment and exceptional value. The rooms run from Portsmouth Royal to the Senatorial Suite. <a class="link" href="stay.html">See the rooms</a>.</p>
-        <p>A stay includes breakfast for one, high-speed internet, and access to the hotel’s leisure and entertainment.</p>
-      </div>
-      <aside class="about-aside">
-        <dl class="facts facts--stack">
-          <div><dt>Address</dt><dd data-fill="address"></dd></div>
-          <div><dt>Check-in</dt><dd data-fill="checkIn"></dd></div>
-          <div><dt>Check-out</dt><dd data-fill="checkOut"></dd></div>
-          <div><dt>Phone</dt><dd><a href="tel:+2348061463304">0806 146 3304</a><br><a href="tel:+2348060940609">0806 094 0609</a></dd></div>
-          <div><dt>Email</dt><dd><a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a></dd></div>
+    <header class="ui-intro">
+      <div class="ui-wrap">
+        <div class="ui-intro__eyebrow">
+          <span class="ui-intro__rule"></span>
+          <span class="label">About</span>
+        </div>
+        <h1>In the city of Onitsha, one destination.</h1>
+        <p class="lead">Stay. Dine. Relax. Celebrate. Connect. Experience. Belong. Guests stay, dine, relax, celebrate, connect and belong under one roof.</p>
+        <dl class="ui-ribbon">
+          <div>
+            <dt>Rooms &amp; suites</dt>
+            <dd>Four</dd>
+          </div>
+          <div>
+            <dt>Experiences</dt>
+            <dd>Nine</dd>
+          </div>
+          <div>
+            <dt>Chidera Hall</dt>
+            <dd>About 150 guests</dd>
+          </div>
+          <div>
+            <dt>Setting</dt>
+            <dd>One destination</dd>
+          </div>
         </dl>
-      </aside>
+      </div>
+    </header>
+
+    <section class="about-story">
+      <div class="ui-wrap about-story__grid">
+        <div class="about-story__copy reveal">
+          <p class="label">The hotel</p>
+          <h2>Accommodation is the beginning, not the whole visit.</h2>
+          <p>Portsmouth Villa Hotel &amp; Suites is a hospitality and lifestyle destination in Onitsha. Guests stay, dine, relax, celebrate, connect and belong under one roof.</p>
+          <p>Every guest deserves royal treatment and exceptional value. The rooms run from Portsmouth Royal to the Senatorial Suite.</p>
+          <p>A stay includes breakfast for one, high-speed internet, and access to the hotel’s leisure and entertainment.</p>
+          <p><a class="ui-text-link" href="stay.html">See the rooms</a></p>
+        </div>
+        <aside class="about-story__aside reveal">
+          <p class="label">Visit</p>
+          <dl class="about-aside-facts">
+            <div>
+              <dt>Address</dt>
+              <dd data-fill="address"></dd>
+            </div>
+            <div>
+              <dt>Check-in</dt>
+              <dd data-fill="checkIn"></dd>
+            </div>
+            <div>
+              <dt>Check-out</dt>
+              <dd data-fill="checkOut"></dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd>
+                <a href="tel:+2348061463304">0806 146 3304</a><br>
+                <a href="tel:+2348060940609">0806 094 0609</a>
+              </dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
     <section class="about-exp-band">
-      <div class="wrap">
-        <p class="label">One destination</p>
-        <h2 class="h2">Nine experiences.</h2>
-        <ul class="about-exp" id="about-exp"></ul>
-        <p><a class="link" href="experiences.html">Read them in order</a></p>
+      <div class="ui-wrap">
+        <div class="about-exp-band__head reveal">
+          <p class="label">One destination</p>
+          <h2>Nine experiences.</h2>
+          <p>From arrival and the rooms to the table, Skydeck, evening rooms and Chidera Hall.</p>
+        </div>
+        <ul class="about-exp reveal" id="about-exp"></ul>
+        <p class="about-exp-band__link"><a class="ui-text-link" href="experiences.html">Read them in order</a></p>
       </div>
     </section>
 
-    <section class="wrap about-people">
-      <article class="person-card person-card--ambassador">
-        <p class="label">The ambassador</p>
-        <p class="person-card__name">KamDebbie</p>
-        <p>Deborah Okolie, known as KamDebbie, is the brand ambassador. The partnership joins a young entertainer’s audience with the hotel’s hospitality: youth, entertainment and a stay in Onitsha.</p>
-      </article>
-      <article class="person-card">
-        <p class="label">Leadership</p>
-        <h2 class="h2">The people behind it</h2>
-        <ul class="people">
-          <li><strong>Chief Amb. Festus Okolie Udungwo</strong> Owner and Chief Executive Officer</li>
-          <li><strong>Rev. Amb. Zeal Festus Okolie</strong> Managing Director</li>
-        </ul>
-      </article>
+    <section class="about-people">
+      <div class="ui-wrap about-people__grid">
+        <article class="about-person reveal">
+          <p class="label">The ambassador</p>
+          <h2>KamDebbie</h2>
+          <p>Deborah Okolie, known as KamDebbie, is the brand ambassador. The partnership joins a young entertainer’s audience with the hotel’s hospitality: youth, entertainment and a stay in Onitsha.</p>
+        </article>
+        <article class="about-person reveal">
+          <p class="label">Leadership</p>
+          <h2>The people behind it</h2>
+          <ul class="about-leaders">
+            <li>
+              <strong>Chief Amb. Festus Okolie Udungwo</strong>
+              <span>Owner and Chief Executive Officer</span>
+            </li>
+            <li>
+              <strong>Rev. Amb. Zeal Festus Okolie</strong>
+              <span>Managing Director</span>
+            </li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section class="wrap about-close">
-      <p class="about-close__line">Your royal comfort starts in the heart of Onitsha.</p>
-      <p><a class="book" href="stay.html">See the rooms</a></p>
+    <section class="about-close">
+      <div class="ui-wrap about-close__inner reveal">
+        <p>Your royal comfort starts in the heart of Onitsha.</p>
+        <a class="ui-btn" href="stay.html">See the rooms</a>
+      </div>
     </section>
+
   </main>
   <div id="site-footer-root"></div>
   <script src="js/content.js"></script>

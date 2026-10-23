@@ -25,6 +25,7 @@
     }).join("");
 
     var bookHref = page === "home" || page === "rooms" ? "#stay-book" : "contact.html#enquire";
+    var bookLabel = page === "home" ? "Reserve a Stay" : "Book";
 
     return (
       '<a class="skip" href="#main">Skip to content</a>' +
@@ -40,7 +41,7 @@
             '<img class="logo__on-light" src="' + LOGO_LIGHT + '" alt="">' +
           "</a>" +
           '<nav class="nav" aria-label="Primary">' + links + "</nav>" +
-          '<a class="book" href="' + bookHref + '">Book</a>' +
+          '<a class="book" href="' + bookHref + '">' + bookLabel + "</a>" +
           '<button class="menu-btn" type="button" aria-label="Open menu" data-menu-open><span></span></button>' +
         "</div>" +
       "</header>" +
@@ -54,7 +55,7 @@
           "<p>" + P.address.lines.join("<br>") + "</p>" +
           "<p>" + phones() + "</p>" +
           '<p><a href="mailto:' + P.email + '">' + P.email + "</a></p>" +
-          '<p><a class="book" href="' + bookHref + '" style="display:inline-flex">Book</a></p>' +
+          '<p><a class="book" href="' + bookHref + '" style="display:inline-flex">' + bookLabel + "</a></p>" +
         "</div>" +
       "</div>"
     );
@@ -70,7 +71,10 @@
         '<div class="wreath wreath--corner" aria-hidden="true"></div>' +
         '<div class="wrap footer-grid">' +
           "<div>" +
-            '<a class="logo" href="index.html" aria-label="Portsmouth Villa Hotel home"><img src="' + LOGO_DARK + '" alt="Portsmouth"></a>' +
+            '<a class="logo" href="index.html" aria-label="Portsmouth Villa Hotel home">' +
+              '<img class="logo__on-dark" src="' + LOGO_DARK + '" alt="Portsmouth">' +
+              '<img class="logo__on-light" src="' + LOGO_LIGHT + '" alt="" style="display:none">' +
+            "</a>" +
             "<p>" + P.lines.promise + "</p>" +
           "</div>" +
           '<div class="footer-links">' + links + "</div>" +

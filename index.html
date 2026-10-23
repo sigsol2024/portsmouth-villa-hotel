@@ -9,137 +9,208 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body data-page="home">
   <div id="site-header-root"></div>
-  <main id="main">
-    <section class="hero hero--slider" id="room-hero" aria-roledescription="carousel" aria-label="Rooms">
-      <div class="hero-slider" data-hero>
-        <div class="hero-slider__track" data-hero-track></div>
-        <div class="hero-slider__copy">
+  <main id="main" class="home">
+
+    <section class="home-hero" data-hero aria-roledescription="carousel" aria-label="Welcome and rooms">
+      <div class="home-hero__track" data-hero-track></div>
+      <div class="home-hero__scrim"></div>
+      <div class="home-hero__inner">
+        <div class="home-hero__copy">
           <p class="label" data-hero-kicker></p>
-          <h1 class="h1" data-hero-title></h1>
-          <p data-hero-text></p>
-          <a class="book" data-hero-cta href="#rooms">See the rooms</a>
+          <h1 data-hero-title></h1>
+          <p class="home-hero__lead" data-hero-text></p>
+          <div class="home-hero__ctas">
+            <a class="home-btn" data-hero-cta href="#accommodations">See the rooms</a>
+          </div>
         </div>
-        <div class="hero-slider__controls">
+        <div class="home-hero__controls">
           <button type="button" data-hero-prev aria-label="Previous slide">‹</button>
           <button type="button" data-hero-next aria-label="Next slide">›</button>
-          <div class="hero-dots" data-hero-dots></div>
+          <div class="home-hero__dots" data-hero-dots></div>
         </div>
       </div>
     </section>
 
-    <div class="booking-bridge" id="stay-book">
-      <div class="booking-bar">
+    <div class="home-bridge" id="stay-book">
+      <div class="booking-bar home-bridge__bar">
         <div id="stayeazi-widget-silkwood-hotels" class="stayeazi-booking-widget" data-widget-token="zf21Fo8LYm0jHYRP91grvJZnBqG4yktO"></div>
       </div>
     </div>
 
-    <section class="intro-band" id="intro">
-      <div class="wreath wreath--black wreath--corner" aria-hidden="true"></div>
-      <div class="wrap intro">
-        <div class="intro__copy">
-          <div>
+    <section class="home-philosophy">
+      <div class="home-wrap">
+        <div class="home-philosophy__grid">
+          <div class="home-philosophy__copy home-reveal">
             <p class="label">Portsmouth</p>
-            <h2 class="h2">Accommodation is where the visit begins.</h2>
-            <p>Portsmouth Villa Hotel &amp; Suites is a place to stay, and also to dine, sit by the pool, go out at night, and gather for a celebration. One address in Onitsha holds the whole of it.</p>
+            <h2>In the city of Onitsha, one destination.</h2>
+            <div class="home-gold-rule"></div>
+            <p>Stay. Dine. Relax. Celebrate. Connect. Experience. Belong. Guests find rooms, a table, the Skydeck, Chidera Hall and the evening under one roof.</p>
             <p>Every guest deserves royal treatment and exceptional value.</p>
+            <div class="home-metrics">
+              <div>
+                <strong>4</strong>
+                <span>Rooms &amp; suites</span>
+              </div>
+              <div>
+                <strong>9</strong>
+                <span>Experiences</span>
+              </div>
+              <div>
+                <strong>150</strong>
+                <span>Guests in Chidera Hall</span>
+              </div>
+            </div>
           </div>
-          <ul class="intro-facts">
-            <li><span>Check-in</span><strong data-fill="checkIn"></strong></li>
-            <li><span>Check-out</span><strong data-fill="checkOut"></strong></li>
-            <li><span>Address</span><strong data-fill="address"></strong></li>
-            <li><span>A stay includes</span><strong>Breakfast, internet, leisure</strong></li>
-          </ul>
+          <div class="home-philosophy__media home-reveal home-reveal--right">
+            <div class="home-philosophy__main" id="philosophy-main"></div>
+            <figure class="home-philosophy__side">
+              <div id="philosophy-side"></div>
+              <figcaption>
+                <span class="label">Onitsha</span>
+                <p data-fill="address"></p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="intro__photo" id="intro-photo"></div>
       </div>
     </section>
 
-    <section class="room-seq" id="rooms" aria-label="Rooms">
-      <div class="room-seq__track" data-seq>
-        <div class="room-seq__stage">
-          <div class="room-seq__frame" data-seq-frame></div>
-          <div class="room-seq__copy">
-            <p class="label">Stay</p>
-            <h2 class="h2" data-seq-title></h2>
-            <p class="room-seq__text" data-seq-text></p>
-            <p class="room-seq__rate" data-seq-rate></p>
-            <a class="book" data-seq-cta href="room-details.html?room=royal#royal">View this room</a>
-            <ol class="room-seq__names" data-seq-names></ol>
+    <section class="home-stay" id="accommodations">
+      <div class="home-wrap">
+        <div class="home-section-head home-reveal">
+          <div>
+            <p class="label">Accommodations</p>
+            <h2>Stay in comfort</h2>
           </div>
+          <p class="home-section-head__aside"><a class="home-text-link" href="stay.html">All four rooms</a></p>
         </div>
+        <div class="home-stay-slider home-reveal" data-stay-slider></div>
       </div>
-      <div class="room-seq__mobile" data-seq-mobile></div>
     </section>
 
-    <section class="table-band" id="table">
-      <div class="wrap table-row">
-        <div id="table-photo"></div>
-        <div class="table-row__copy">
+    <section class="home-table" id="villa-table">
+      <div class="home-wrap home-table__grid">
+        <div class="home-table__media home-reveal">
+          <div id="table-photo"></div>
+          <div class="home-table__badge">
+            <span class="label">The Villa Table</span>
+            <p>Good food and an inviting room</p>
+          </div>
+        </div>
+        <div class="home-table__copy home-reveal home-reveal--right">
           <p class="label">Dining</p>
-          <h2 class="h2">The Villa Table</h2>
-          <p>Dining for one guest, a family, a couple, or a corporate table. Good food and an inviting room.</p>
-          <ul class="intro-facts dining-facts">
+          <h2>The Villa Table</h2>
+          <div class="home-gold-rule"></div>
+          <p class="home-lede">Dining for one guest, a family, a couple, or a corporate table. Good food and an inviting room.</p>
+          <div class="home-meal-grid">
+            <div class="home-meal home-reveal home-reveal--right" style="transition-delay: 0s">
+              <span class="material-symbols-outlined" aria-hidden="true">bakery_dining</span>
+              <h3>Breakfast</h3>
+              <span data-fill="breakfastHours"></span>
+            </div>
+            <div class="home-meal home-reveal home-reveal--right" style="transition-delay: 0.05s">
+              <span class="material-symbols-outlined" aria-hidden="true">restaurant</span>
+              <h3>Brunch</h3>
+              <span data-fill="brunchHours"></span>
+            </div>
+            <div class="home-meal home-reveal home-reveal--right" style="transition-delay: 0.1s">
+              <span class="material-symbols-outlined" aria-hidden="true">dinner_dining</span>
+              <h3>Dinner</h3>
+              <span data-fill="dinnerHours"></span>
+            </div>
+          </div>
+          <p><a class="home-btn home-btn--ink" href="experiences.html">View all experiences</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-sky" id="sky">
+      <div class="home-wrap">
+        <div class="home-section-head home-reveal">
+          <div>
+            <p class="label">Leisure</p>
+            <h2>Skydeck Pool &amp; Bar</h2>
+          </div>
+          <p class="home-section-head__aside"><a class="home-text-link" href="experiences.html#skydeck">Read the experience</a></p>
+        </div>
+        <div class="home-sky__grid">
+          <div class="home-sky__photo home-reveal" id="sky-main"></div>
+          <div class="home-sky__panel home-reveal home-reveal--right">
+            <span class="material-symbols-outlined home-sky__icon" aria-hidden="true">pool</span>
+            <h3>An elevated place to sit by the pool, take a drink, and step away from the city for a while.</h3>
+            <p>Guests come here to rest between a stay, a meal, and the rest of the evening. The water, the shade, and the bar sit together, so a drink, a conversation, or an hour by the pool stays in one room of the hotel, away from the pace of Onitsha.</p>
+            <div class="home-sky__stack" id="sky-stack"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-hall" id="hall">
+      <div class="home-wrap home-hall__grid">
+        <div class="home-hall__copy home-reveal">
+          <p class="label">Celebrations</p>
+          <h2>Chidera Hall</h2>
+          <div class="home-gold-rule"></div>
+          <p class="home-lede">Weddings, birthdays, conferences, corporate events, meetings and celebrations, for about 150 guests.</p>
+          <ul class="home-hall__list">
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-              <span>Breakfast</span>
-              <strong data-fill="breakfastHours"></strong>
+              <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+              <span>About 150 guests</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v2a8 8 0 0 1-16 0v-2z"/><path d="M7 11V7M12 11V5M17 11V7"/></svg>
-              <span>Dinner</span>
-              <strong data-fill="dinnerHours"></strong>
+              <span class="material-symbols-outlined" aria-hidden="true">celebration</span>
+              <span>Weddings, birthdays and celebrations</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20h12"/><path d="M8 20V9a4 4 0 0 1 8 0v11"/><path d="M8 13h8"/></svg>
-              <span>Brunch</span>
-              <strong data-fill="brunchHours"></strong>
+              <span class="material-symbols-outlined" aria-hidden="true">meeting_room</span>
+              <span>Conferences, corporate events and meetings</span>
             </li>
           </ul>
-          <p><a class="link" href="experiences.html">View all experiences</a></p>
+          <p><a class="home-btn" href="chidera-hall.html">Enquire for the hall</a></p>
         </div>
-      </div>
-    </section>
-
-    <section class="sky" id="sky">
-      <div class="wrap sky__layout">
-        <div class="sky__copy">
-          <p class="label">Leisure</p>
-          <h2 class="h2">Skydeck Pool &amp; Bar</h2>
-          <p>An elevated place to sit by the pool, take a drink, and step away from the city for a while.</p>
-          <p>Guests come here to rest between a stay, a meal, and the rest of the evening. The water, the shade, and the bar sit together, so a drink, a conversation, or an hour by the pool stays in one room of the hotel, away from the pace of Onitsha.</p>
-          <p><a class="link" href="experiences.html#skydeck">Read the experience</a></p>
-        </div>
-        <div class="sky-gallery" id="sky-gallery"></div>
-      </div>
-    </section>
-
-    <section class="chidera" id="hall">
-      <div class="wreath wreath--corner" aria-hidden="true"></div>
-      <div class="wrap chidera__grid">
-        <div class="chidera__copy">
-          <div class="chidera__intro">
-            <p class="label">Celebrations</p>
-            <h2 class="h2">Chidera Hall</h2>
-            <p>Weddings, birthdays, conferences, corporate events, meetings and celebrations, for about 150 guests.</p>
+        <div class="home-hall__media home-reveal home-reveal--right">
+          <div id="chidera-photo"></div>
+          <div class="home-hall__caption">
+            <span class="label">Chidera Hall</span>
+            <p>One hall, set for the occasion</p>
           </div>
-          <p class="chidera__cta"><a class="book" href="chidera-hall.html">Enquire for the hall</a></p>
         </div>
-        <div id="chidera-photo"></div>
       </div>
     </section>
 
-    <section class="evening">
-      <div class="wrap">
-        <p class="label">After dark</p>
-        <h2 class="h2">The evening continues.</h2>
-        <div class="evening__grid" id="evening"></div>
+    <section class="home-evening">
+      <div class="home-wrap">
+        <div class="home-evening__intro home-reveal">
+          <p class="label">After dark</p>
+          <h2>The evening continues.</h2>
+          <p>Food, music, drinks and company — on the roof, in Festcave Club, or in a private room.</p>
+        </div>
+        <div class="home-evening__grid home-reveal" id="evening"></div>
       </div>
     </section>
+
+    <section class="home-close">
+      <div class="home-wrap home-close__inner home-reveal">
+        <p class="label">Your stay awaits</p>
+        <h2>One address in Onitsha holds the whole of it.</h2>
+        <p>Your royal comfort starts in the heart of Onitsha.</p>
+        <div class="home-close__ctas">
+          <a class="home-btn" href="#stay-book">Reserve a stay</a>
+          <a class="home-btn home-btn--ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+  <button type="button" class="home-scroll-top" id="home-scroll-top" aria-label="Scroll to top" hidden>
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+  </button>
   <div id="site-footer-root"></div>
   <script src="js/content.js"></script>
   <script src="js/images.js"></script>

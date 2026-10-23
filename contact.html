@@ -9,77 +9,95 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portsmouth.css">
+  <link rel="stylesheet" href="css/site-ui.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body data-page="contact">
   <div id="site-header-root"></div>
-  <main id="main" class="page">
-    <header class="page-head">
-      <div class="wrap">
-        <p class="label">Contact</p>
-        <h1 class="h1">Bookings and enquiries.</h1>
+  <main id="main" class="contact-page">
+
+    <header class="ui-intro">
+      <div class="ui-wrap">
+        <div class="ui-intro__eyebrow">
+          <span class="ui-intro__rule"></span>
+          <span class="label">Contact</span>
+        </div>
+        <h1>Bookings and enquiries.</h1>
         <p class="lead">Call, write, or send the form. It opens in your email, addressed to the hotel.</p>
+        <dl class="ui-ribbon">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+2348061463304">0806 146 3304</a></dd>
+          </div>
+          <div>
+            <dt>Also</dt>
+            <dd><a href="tel:+2348060940609">0806 094 0609</a></dd>
+          </div>
+          <div>
+            <dt>Check-in</dt>
+            <dd data-fill="checkIn"></dd>
+          </div>
+          <div>
+            <dt>Check-out</dt>
+            <dd data-fill="checkOut"></dd>
+          </div>
+        </dl>
       </div>
     </header>
 
-    <section class="wrap contact-layout">
-      <div class="contact-channels">
-        <h2 class="h2">Reach the hotel</h2>
-        <div class="channel">
-          <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
-          <div>
-            <p class="channel__label">Phone</p>
-            <p><a href="tel:+2348061463304">0806 146 3304</a><br><a href="tel:+2348060940609">0806 094 0609</a></p>
+    <section class="contact-main">
+      <div class="ui-wrap contact-main__grid">
+        <div class="contact-info reveal">
+          <p class="label">Reach the hotel</p>
+          <h2>How to get in touch</h2>
+
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <p class="label">Email</p>
+              <p><a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a></p>
+            </div>
+            <div class="contact-channel">
+              <p class="label">Address</p>
+              <p data-fill="address"></p>
+            </div>
+            <div class="contact-channel">
+              <p class="label">Arrival and departure</p>
+              <p>Check-in <span data-fill="checkIn"></span>. Check-out <span data-fill="checkOut"></span>.</p>
+            </div>
           </div>
-        </div>
-        <div class="channel">
-          <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-          <div>
-            <p class="channel__label">Email</p>
-            <p><a href="mailto:portsmouthvillahotels@gmail.com">portsmouthvillahotels@gmail.com</a></p>
+
+          <div class="contact-map">
+            <iframe title="Map: Portsmouth Villa Hotel &amp; Suites, Obinwe Street, Fegge, Onitsha" src="https://www.google.com/maps?q=Obinwe%20Street%2C%20Fegge%2C%20Onitsha%2C%20Anambra%20State%2C%20Nigeria&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
-        </div>
-        <div class="channel">
-          <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
-          <div>
-            <p class="channel__label">Address</p>
-            <p data-fill="address"></p>
-          </div>
-        </div>
-        <div class="channel">
-          <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
-          <div>
-            <p class="channel__label">Arrival and departure</p>
-            <p>Check-in <span data-fill="checkIn"></span>. Check-out <span data-fill="checkOut"></span>.</p>
-          </div>
+          <p><a class="ui-text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Obinwe+Street+Fegge+Onitsha+Anambra+State+Nigeria" target="_blank" rel="noopener">Open in Google Maps</a></p>
         </div>
 
-        <div class="map-frame">
-          <iframe title="Map: Portsmouth Villa Hotel &amp; Suites, Obinwe Street, Fegge, Onitsha" src="https://www.google.com/maps?q=Obinwe%20Street%2C%20Fegge%2C%20Onitsha%2C%20Anambra%20State%2C%20Nigeria&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="contact-form-panel reveal" id="enquire">
+          <p class="label">Send an enquiry</p>
+          <h2>Rooms, dining and the hall</h2>
+          <p>Tell us what you need. The enquiry opens in your email.</p>
+          <form class="enquire" id="enquire-form">
+            <div class="enquire__row">
+              <label>Name <input name="name" required autocomplete="name"></label>
+              <label>Phone <input name="phone" required autocomplete="tel"></label>
+            </div>
+            <label>Dates <input name="dates" required placeholder="Arrival and departure"></label>
+            <label>Room or hall
+              <select name="interest" required></select>
+            </label>
+            <label>Note <textarea name="note" rows="4"></textarea></label>
+            <button class="ui-btn" type="submit">Send enquiry</button>
+          </form>
         </div>
-        <p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Obinwe+Street+Fegge+Onitsha+Anambra+State+Nigeria" target="_blank" rel="noopener">Open in Google Maps</a></p>
-      </div>
-
-      <div class="enquire-panel" id="enquire">
-        <p class="label">Send an enquiry</p>
-        <h2 class="h2">Rooms, dining and the hall</h2>
-        <form class="enquire" id="enquire-form">
-          <label>Name <input name="name" required autocomplete="name"></label>
-          <label>Phone <input name="phone" required autocomplete="tel"></label>
-          <label>Dates <input name="dates" required placeholder="Arrival and departure"></label>
-          <label>Room or hall
-            <select name="interest" required></select>
-          </label>
-          <label>Note <textarea name="note" rows="4"></textarea></label>
-          <button class="book" style="display:inline-flex;justify-content:center" type="submit">Send enquiry</button>
-        </form>
       </div>
     </section>
 
     <section class="contact-close">
-      <div class="wrap">
+      <div class="ui-wrap">
         <p>Your royal comfort starts in the heart of Onitsha.</p>
       </div>
     </section>
+
   </main>
   <div id="site-footer-root"></div>
   <script src="js/content.js"></script>
