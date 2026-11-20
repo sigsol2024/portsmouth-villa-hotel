@@ -62,7 +62,7 @@
         rate: 45000,
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.royal",
-        gallery: ["room.royal", "room.royal.bed", "room.royal.desk", "room.royal.bath"],
+        gallery: ["room.royal", "room.royal.desk"],
         bookUrl: STAYEAZI + "/classic-room"
       },
       {
@@ -74,7 +74,7 @@
         rate: 65000,
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.diplomatic",
-        gallery: ["room.diplomatic", "room.diplomatic.sitting", "room.diplomatic.bath"],
+        gallery: ["room.diplomatic", "room.diplomatic.sitting", "room.diplomatic.view", "room.diplomatic.overview"],
         bookUrl: STAYEAZI + "/deluxe-room"
       },
       {
@@ -86,7 +86,7 @@
         rate: 95000,
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.ambassadorial",
-        gallery: ["room.ambassadorial", "room.ambassadorial.bed", "room.ambassadorial.sitting"],
+        gallery: ["room.ambassadorial", "room.ambassadorial.bed", "room.ambassadorial.sitting", "room.ambassadorial.desk"],
         bookUrl: STAYEAZI + "/executive-room"
       },
       {
@@ -98,7 +98,7 @@
         rate: 150000,
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.senatorial",
-        gallery: ["room.senatorial", "room.senatorial.bed", "room.senatorial.wardrobe"],
+        gallery: ["room.senatorial", "room.senatorial.bed", "room.senatorial.parlor", "room.senatorial.parlor2"],
         bookUrl: STAYEAZI + "/diplomatic-suite"
       }
     ],
@@ -108,14 +108,14 @@
         name: "The Reception",
         sentence:
           "The stay begins on arrival, with a warm, professional front of house and a clear first impression.",
-        image: "home.hero"
+        image: "experience.reception"
       },
       {
         id: "accommodation",
         name: "Accommodation",
         sentence:
           "Rooms and suites arranged for comfort, privacy and different kinds of stay.",
-        image: "home.intro"
+        image: "room.royal"
       },
       {
         id: "lounge",

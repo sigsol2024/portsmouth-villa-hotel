@@ -1,43 +1,103 @@
-/* Temporary photographs copied from Silkwood images/hotel.
- * Pages call a slot name. Swap a picture by changing file here.
- * Alt text describes the scene and does not name either hotel.
+/* Portsmouth photographs. Pages call a slot name; swap a picture by changing the file here.
+ * Original hotel photos live under assets/img/portsmouth/.
+ * Chidera Hall and Festcave still use Silkwood stand-ins until Portsmouth supplies those spaces.
  */
 (function (global) {
   var slots = {
     "home.hero": {
-      file: "placeholder/reception/silkwood-100.jpg",
-      alt: "An arrival lounge with a sofa, armchairs and glass entrance doors",
-      focus: "30% 60%"
+      file: "portsmouth/building/exterior.jpg",
+      alt: "The cream and gold facade of Portsmouth Villa Hotel & Suites with flags at the entrance",
+      focus: "50% 45%"
     },
     "home.intro": {
-      file: "placeholder/rooms/executive/silkwood-171.jpg",
-      alt: "A suite sitting room with a round table, a sofa and a gold-pattern carpet",
-      focus: "50% 55%"
+      file: "portsmouth/reception/desk.jpg",
+      alt: "The reception desk with gold pendant lights, marble flooring and a lounge beyond",
+      focus: "55% 50%"
+    },
+    "experience.reception": {
+      file: "portsmouth/reception/lobby.jpg",
+      alt: "The lobby lounge beside reception with armchairs and a curved staircase",
+      focus: "45% 50%"
     },
     "room.royal": {
-      file: "placeholder/rooms/classic/silkwood-4.jpg",
-      alt: "A guest room with a made bed, a dark desk and a gold-patterned wall",
-      focus: "60% 55%"
+      file: "portsmouth/rooms/royal/bed.jpg",
+      alt: "A Portsmouth Royal bedroom with a carved wood headboard and purple accent lighting",
+      focus: "45% 50%"
     },
-    "room.diplomatic": {
-      file: "placeholder/rooms/executive/silkwood-179.jpg",
-      alt: "A bedroom with white linen against a black and gold patterned wall",
+    "room.royal.desk": {
+      file: "portsmouth/rooms/royal/desk.jpg",
+      alt: "A work desk with a wall-mounted screen and embroidered hotel towels on the bed",
       focus: "50% 55%"
     },
+    "room.diplomatic": {
+      file: "portsmouth/rooms/diplomatic/bed.jpg",
+      alt: "A Diplomatic Room bed with gold-embroidered pillows and a lit wood headboard",
+      focus: "50% 50%"
+    },
+    "room.diplomatic.sitting": {
+      file: "portsmouth/rooms/diplomatic/angle-a.jpg",
+      alt: "A Diplomatic Room view showing the bed, desk area and room lighting",
+      focus: "50% 50%"
+    },
+    "room.diplomatic.view": {
+      file: "portsmouth/rooms/diplomatic/angle-b.jpg",
+      alt: "Another angle of the Diplomatic Room with desk, screen and seating",
+      focus: "50% 55%"
+    },
+    "room.diplomatic.overview": {
+      file: "portsmouth/rooms/diplomatic/overview.jpg",
+      alt: "Overview of the Diplomatic Room",
+      focus: "50% 50%"
+    },
     "room.ambassadorial": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-207.jpg",
-      alt: "A sitting room with a sofa, a round table, a desk and a wall-mounted screen",
+      file: "portsmouth/rooms/ambassadorial/suite-b.jpg",
+      alt: "An Ambassadorial Suite with a gold bed runner, ottoman and round sitting table",
+      focus: "50% 50%"
+    },
+    "room.ambassadorial.bed": {
+      file: "portsmouth/rooms/ambassadorial/suite-d.jpg",
+      alt: "The Ambassadorial Suite bedroom with a diamond-pattern wood headboard",
+      focus: "50% 50%"
+    },
+    "room.ambassadorial.sitting": {
+      file: "portsmouth/rooms/ambassadorial/suite-a.jpg",
+      alt: "Ambassadorial Suite sitting and sleeping space in one open room",
+      focus: "50% 55%"
+    },
+    "room.ambassadorial.desk": {
+      file: "portsmouth/rooms/ambassadorial/suite-c.jpg",
+      alt: "Ambassadorial Suite desk and entertainment wall",
       focus: "50% 55%"
     },
     "room.senatorial": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-221.jpg",
-      alt: "A wide bed with white linen, bedside lamps and sheer curtains",
-      focus: "50% 60%"
+      file: "portsmouth/rooms/senatorial/bedroom.jpg",
+      alt: "The Senatorial Suite bedroom with blue cove lighting and a carved headboard",
+      focus: "50% 48%"
+    },
+    "room.senatorial.bed": {
+      file: "portsmouth/rooms/senatorial/bedroom-2.jpg",
+      alt: "A wider view of the Senatorial Suite bedroom",
+      focus: "50% 50%"
+    },
+    "room.senatorial.parlor": {
+      file: "portsmouth/rooms/senatorial/parlor-a.jpg",
+      alt: "The Senatorial Suite parlor with lounge seating",
+      focus: "50% 50%"
+    },
+    "room.senatorial.parlor2": {
+      file: "portsmouth/rooms/senatorial/parlor-b.jpg",
+      alt: "Another view of the Senatorial Suite parlor",
+      focus: "50% 50%"
     },
     "experience.table": {
-      file: "placeholder/restaurant/silkwood-74.jpg",
-      alt: "A dining room with tables laid with white linen and folded napkins",
-      focus: "50% 60%"
+      file: "portsmouth/dining/table-a.jpg",
+      alt: "The Villa Table dining room with a set table and gold buffet service",
+      focus: "50% 55%"
+    },
+    "experience.table.buffet": {
+      file: "portsmouth/dining/table-b.jpg",
+      alt: "Villa Table buffet counter with gold serving dishes and juice service",
+      focus: "50% 50%"
     },
     "experience.chidera": {
       file: "placeholder/meeting-space/silkwood-151.jpg",
@@ -45,39 +105,49 @@
       focus: "50% 60%"
     },
     "experience.sky.lounge": {
-      file: "placeholder/pool-bar/silkwood-110.jpg",
-      alt: "Lounge seating under a thatched roof strung with warm lights",
-      focus: "50% 55%"
+      file: "portsmouth/skydeck/bar-a.jpg",
+      alt: "Skydeck Pool & Bar seating under green wall planting",
+      focus: "50% 50%"
     },
     "experience.sky.seating": {
-      file: "placeholder/pool-bar/silkwood-111.jpg",
-      alt: "Tables and sofas beside the pool under a thatched roof",
-      focus: "40% 62%"
+      file: "portsmouth/skydeck/bar-b.jpg",
+      alt: "Skydeck lounge seating beside the pool deck",
+      focus: "50% 55%"
     },
     "experience.sky.pool": {
-      file: "placeholder/pool-bar/silkwood-112.jpg",
-      alt: "A swimming pool beside shaded tables and lounge chairs",
-      focus: "62% 72%"
+      file: "portsmouth/skydeck/pool.jpg",
+      alt: "The Skydeck swimming pool with a waterfall spout and turf-clad walls",
+      focus: "50% 55%"
     },
     "experience.sky.table": {
-      file: "placeholder/pool-bar/silkwood-120.jpg",
-      alt: "A pool table under a thatched roof with string lights",
-      focus: "50% 58%"
+      file: "portsmouth/skydeck/vip.jpg",
+      alt: "VIP seating at the Skydeck Pool & Bar",
+      focus: "50% 50%"
     },
     "evening.rooftop": {
-      file: "placeholder/pool-bar/silkwood-117.jpg",
-      alt: "Outdoor lounge chairs under thatched umbrellas beside palm plants",
-      focus: "30% 60%"
+      file: "portsmouth/rooftop/vibe-a.jpg",
+      alt: "Rooftop Vibe seating and evening lights on the roof",
+      focus: "50% 50%"
+    },
+    "evening.rooftop.alt": {
+      file: "portsmouth/rooftop/vibe-b.jpg",
+      alt: "Another view of the rooftop terrace",
+      focus: "50% 55%"
     },
     "evening.festcave": {
       file: "placeholder/pool-bar/silkwood-120.jpg",
-      alt: "A pool table under a thatched roof strung with warm lights",
+      alt: "A nightlife room with music and evening seating",
       focus: "50% 58%"
     },
     "evening.prive": {
-      file: "placeholder/restaurant/silkwood-70.jpg",
-      alt: "A private dining room with tables set, curtains and warm shelving",
-      focus: "50% 55%"
+      file: "portsmouth/prive/prive-1.jpg",
+      alt: "Portsmouth Privé lounge seating with gold wall details",
+      focus: "50% 50%"
+    },
+    "evening.prive.bar": {
+      file: "portsmouth/prive/prive-3.jpg",
+      alt: "The Portsmouth Privé VIP bar area",
+      focus: "50% 50%"
     },
     "chidera.celebration": {
       file: "placeholder/main-hall/silkwood-160.jpg",
@@ -95,54 +165,14 @@
       focus: "50% 58%"
     },
     "experience.lounge": {
-      file: "placeholder/reception/silkwood-86.jpg",
-      alt: "A lounge with armchairs, sofas, shelves and plants",
+      file: "portsmouth/lounge/lounge-a.jpg",
+      alt: "Portsmouth Lounge with sofas, coffee tables and warm lighting",
+      focus: "50% 50%"
+    },
+    "experience.lounge.alt": {
+      file: "portsmouth/lounge/lounge-b.jpg",
+      alt: "Another view of the Portsmouth Lounge",
       focus: "50% 55%"
-    },
-    "room.royal.bed": {
-      file: "placeholder/rooms/classic/silkwood-12.jpg",
-      alt: "A made bed against a black and gold patterned wall with lamps",
-      focus: "50% 55%"
-    },
-    "room.royal.desk": {
-      file: "placeholder/rooms/classic/silkwood-5.jpg",
-      alt: "A desk, wardrobe and the edge of a bed in a guest room",
-      focus: "45% 55%"
-    },
-    "room.royal.bath": {
-      file: "placeholder/rooms/classic/silkwood-8.jpg",
-      alt: "A marble bathroom with a basin, mirror and shower",
-      focus: "50% 55%"
-    },
-    "room.diplomatic.sitting": {
-      file: "placeholder/rooms/executive/silkwood-175.jpg",
-      alt: "A sitting area with a screen, armchairs and a round table",
-      focus: "50% 55%"
-    },
-    "room.diplomatic.bath": {
-      file: "placeholder/rooms/executive/silkwood-190.jpg",
-      alt: "A marble bathroom with a glass shower and a dark stone basin",
-      focus: "50% 55%"
-    },
-    "room.ambassadorial.bed": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-216.jpg",
-      alt: "A bed, desk and wall-mounted screen in a suite",
-      focus: "50% 55%"
-    },
-    "room.ambassadorial.sitting": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-203.jpg",
-      alt: "A suite sitting room with a sofa, round table and desk",
-      focus: "50% 55%"
-    },
-    "room.senatorial.bed": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-224.jpg",
-      alt: "A bed with sheer curtains and a desk against a gold-patterned wall",
-      focus: "50% 55%"
-    },
-    "room.senatorial.wardrobe": {
-      file: "placeholder/rooms/diplomatic-suite/silkwood-210.jpg",
-      alt: "Wardrobes and a tea point in a suite",
-      focus: "45% 55%"
     }
   };
 
