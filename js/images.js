@@ -7,7 +7,7 @@
     "home.hero": {
       file: "portsmouth/building/exterior.jpg",
       alt: "The cream and gold facade of Portsmouth Villa Hotel & Suites with flags at the entrance",
-      focus: "50% 45%"
+      focus: "50% 0%"
     },
     "home.intro": {
       file: "portsmouth/reception/desk.jpg",
