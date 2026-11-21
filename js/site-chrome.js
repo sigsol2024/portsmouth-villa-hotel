@@ -24,7 +24,8 @@
       return '<a href="' + item.href + '"' + current + ">" + item.label + "</a>";
     }).join("");
 
-    var bookHref = page === "home" || page === "rooms" ? "#stay-book" : "contact.html#enquire";
+    // Home / most pages: go to accommodations. Room page: jump to that room's date bar.
+    var bookHref = page === "rooms" ? "#stay-book" : "stay.html";
     var bookLabel = page === "home" ? "Reserve a Stay" : "Book";
 
     return (
