@@ -2,10 +2,11 @@
  * One record for names, stay details, and copy.
  * Stand-in rates, the deposit, check-in, and the address are working figures.
  * Replace or delete them here. Every page reads this file.
- * The StayEazi token is Silkwood's until Portsmouth's own widget replaces it.
+ * Homepage uses the general Portsmouth StayEazi calendar widget.
+ * Room pages use the same widget UI, then redirect into that room's reservation URL with the chosen dates.
  */
 (function (global) {
-  var STAYEAZI = "https://app.stayeazi.com/reservation/silkwood-hotels";
+  var STAYEAZI = "https://app.stayeazi.com/reservation/portsmouth-villa-hotel-suites";
 
   global.Portsmouth = {
     name: "Portsmouth Villa Hotel & Suites",
@@ -26,8 +27,8 @@
     ],
     email: "portsmouthvillahotels@gmail.com",
     stayeazi: {
-      token: "zf21Fo8LYm0jHYRP91grvJZnBqG4yktO",
-      note: "Temporary Silkwood widget. Replace token and bookUrl together."
+      token: "nAEa2ceqfGNsXdXq2zRCvbxhRuye91Mz",
+      note: "Portsmouth Villa Hotel & Suites StayEazi property widget."
     },
     stay: {
       checkIn: "14:00",
@@ -63,7 +64,7 @@
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.royal",
         gallery: ["room.royal", "room.royal.desk"],
-        bookUrl: STAYEAZI + "/classic-room"
+        bookUrl: STAYEAZI + "/portsmouth-royal"
       },
       {
         id: "diplomatic",
@@ -75,7 +76,7 @@
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.diplomatic",
         gallery: ["room.diplomatic", "room.diplomatic.sitting", "room.diplomatic.view", "room.diplomatic.overview"],
-        bookUrl: STAYEAZI + "/deluxe-room"
+        bookUrl: STAYEAZI + "/diplomatic-room"
       },
       {
         id: "ambassadorial",
@@ -87,7 +88,7 @@
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.ambassadorial",
         gallery: ["room.ambassadorial", "room.ambassadorial.bed", "room.ambassadorial.sitting", "room.ambassadorial.desk"],
-        bookUrl: STAYEAZI + "/executive-room"
+        bookUrl: STAYEAZI + "/ambassadorial-suite"
       },
       {
         id: "senatorial",
@@ -99,7 +100,7 @@
         rateNote: "Stand-in nightly rate. Replace or remove.",
         image: "room.senatorial",
         gallery: ["room.senatorial", "room.senatorial.bed", "room.senatorial.parlor", "room.senatorial.parlor2"],
-        bookUrl: STAYEAZI + "/diplomatic-suite"
+        bookUrl: STAYEAZI + "/senatorial-suite"
       }
     ],
     experiences: [

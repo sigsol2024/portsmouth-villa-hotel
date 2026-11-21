@@ -471,8 +471,13 @@
     var stay = P.stay;
     document.title = room.name + " | " + P.name;
 
-    var widget = document.getElementById("stayeazi-widget-room");
-    if (widget) widget.setAttribute("data-booking-url", room.bookUrl);
+    var widget =
+      document.getElementById("stayeazi-widget-portsmouth-villa-hotel-suites") ||
+      document.querySelector(".room-book .stayeazi-booking-widget");
+    if (widget) {
+      widget.setAttribute("data-booking-url", room.bookUrl);
+      widget.setAttribute("data-widget-token", (P.stayeazi && P.stayeazi.token) || widget.getAttribute("data-widget-token"));
+    }
 
     var gallery = room.gallery && room.gallery.length ? room.gallery : [room.image];
     var others = P.rooms.filter(function (entry) { return entry.id !== room.id; });
